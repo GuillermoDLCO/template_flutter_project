@@ -1,4 +1,4 @@
-import 'enums/user_type.dart';
+import '../models/enums/user_type.dart';
 
 class User {
   String name;

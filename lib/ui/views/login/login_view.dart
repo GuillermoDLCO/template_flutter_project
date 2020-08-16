@@ -6,8 +6,7 @@ import 'package:stacked_hooks/stacked_hooks.dart';
 import 'package:walletonbankingapp/res/pallete_color.dart';
 import 'package:walletonbankingapp/ui/views/login/login_viewmodel.dart';
 import 'package:walletonbankingapp/ui/widgets/buttons/action_button_custom.dart';
-import 'package:walletonbankingapp/ui/widgets/buttons/google_button.dart';
-import 'package:walletonbankingapp/ui/widgets/text_fields/text_field_custom.dart';
+import 'package:walletonbankingapp/ui/widgets/text_field/text_field_custom.dart';
 
 class LoginView extends StatelessWidget {
   @override
@@ -60,16 +59,18 @@ class _BodyLogin extends HookViewModelWidget<LoginViewModel> {
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: TextFieldCustom(
               controller: usernameController,
-              name: 'Email',
-              theme: TextFormTheme.Dark,
+              nameField: 'Email',
+              onChanged: (text) {},
+              hintText: '',
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
             child: TextFieldCustom(
               controller: passwordController,
-              name: 'Password',
-              theme: TextFormTheme.Dark,
+              nameField: 'Password',
+              onChanged: (text) {},
+              hintText: '',
             ),
           ),
           Padding(
@@ -88,7 +89,10 @@ class _BodyLogin extends HookViewModelWidget<LoginViewModel> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: GoogleButton(action: () {}),
+            child: ActionButtonCustom(
+              action: () {},
+              label: 'Login',
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 20.0),

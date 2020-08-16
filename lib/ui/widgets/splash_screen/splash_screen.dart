@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Color(0xff0B203A),
         body: Center(
           child: Image.asset(
-            'assets/logo/reservas.gif',
+            'assets/logo/splash.gif',
             width: 400.0,
           ),
         ));

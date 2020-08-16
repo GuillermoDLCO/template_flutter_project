@@ -1,7 +1,7 @@
 import 'package:injectable/injectable.dart';
 import 'package:observable_ish/observable_ish.dart';
 import 'package:stacked/stacked.dart';
-import 'package:walletonbankingapp/data_models/user.dart';
+import 'package:walletonbankingapp/models/user.dart';
 
 @lazySingleton
 class UserService with ReactiveServiceMixin {
